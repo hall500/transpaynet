@@ -12,7 +12,7 @@ const dotenv = require("dotenv").config();
 const helpers = require("./helpers");
 
 if(dotenv.error){
-  console.log(".env file is missing!");
+  console.error(".env file is missing!");
   helpers.App.exit();
 }
 

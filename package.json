@@ -1,0 +1,55 @@
+{
+    "name": "transpaynet",
+    "version": "1.0.0",
+    "description": "A simplified method of handling payments across inter-state transport services",
+    "main": "src/app.js",
+    "directories": {
+        "test": "tests"
+    },
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "chai": "^4.2.0",
+        "chai-fs": "^2.0.0",
+        "chai-http": "^4.3.0",
+        "cookie-parser": "^1.4.5",
+        "cors": "^2.8.5",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "express-session": "^1.17.1",
+        "helmet": "^4.1.1",
+        "mongodb": "^3.6.2",
+        "mongoose": "^5.10.8",
+        "nodemon": "^2.0.4",
+        "passport": "^0.4.1",
+        "passport-local": "^1.0.0",
+        "passport-local-mongoose": "^6.0.1",
+        "pug": "^3.0.0",
+        "winston": "^3.3.3",
+        "zombie": "^6.1.4"
+    },
+    "devDependencies": {
+        "live-server": "^1.2.1",
+        "mocha": "^8.1.3"
+    },
+    "scripts": {
+        "dev": "nodemon src/app.js",
+        "test": "mocha",
+        "test:browser": "live-server --port=9000 --mount=/:public"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hall500/transpaynet.git"
+    },
+    "keywords": [
+        "payment",
+        "node",
+        "transport",
+        "services"
+    ],
+    "author": "Abdullah Momoh",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/hall500/transpaynet/issues"
+    },
+    "homepage": "https://github.com/hall500/transpaynet#readme"
+}

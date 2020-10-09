@@ -2,11 +2,13 @@ const dotenv = require("dotenv");
 
 process.env.NODE_ENV = process.env.NODE_ENV || "development";
 
-const containsEnv = dotenv.config();
+if(process.env.NODE_ENV === "development"){
+  const containsEnv = dotenv.config();
 
-if(containsEnv.error){
-  console.error("⚠️  Couldn't find .env file  ⚠️");
-  process.exit(1);
+  if(containsEnv.error){
+    console.error("⚠️  Couldn't find .env file  ⚠️");
+    process.exit(1);
+  }
 }
 
 module.exports = CONFIG = {

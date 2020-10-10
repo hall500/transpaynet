@@ -16,4 +16,10 @@ module.exports = CONFIG = {
   logs: {
     level: process.env.LOG_LEVEL || 'silly',
   },
+  /**
+   * API configs
+   */
+  api: {
+    prefix: '/api',
+  },
 }

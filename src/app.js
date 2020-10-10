@@ -1,5 +1,11 @@
 const express = require("express");
 
+/* To get started create a .env file containing
+SESSION_SECRET="some random scret"
+PORT=3000
+DATABASE="mongo db url"
+DBNAME="database name"
+ */
 const config = require("./config");
 
 const Logger = require("./loaders/logger");

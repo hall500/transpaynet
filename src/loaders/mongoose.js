@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-const db = require("mongodb");
 const config = require("../config");
 
 const MONGO = async () => {

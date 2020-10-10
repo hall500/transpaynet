@@ -13,7 +13,7 @@ const Logger = require("./loaders/logger");
 async function start() {
   const app = express();
 
-  await require("./loaders")({ appLoader: app });
+  await require("./loaders")({ expressApp: app });
 
   app.listen(config.port, (err) => {
     if(err){
